@@ -29,6 +29,7 @@ members = [
     "contracts/third-party",
     "contracts/staking",
     "contracts/hello-world", # Added this
+    "contracts/version-registry",
     "tests",
     "indexer",
 ]

@@ -376,7 +376,8 @@ pub mod compliance_codes {
     pub const COMPLIANCE_JURISDICTION_NOT_SUPPORTED: u32 = 6011;
     pub const COMPLIANCE_INVALID_DOCUMENT_TYPE: u32 = 6012;
     pub const COMPLIANCE_DATA_RETENTION_EXPIRED: u32 = 6013;
-    pub const REENTRANT_CALL: u32 = 6014;
+    pub const COMPLIANCE_SANCTIONS_CHECK_FAILED: u32 = 6014;
+    pub const REENTRANT_CALL: u32 = 6015;
 }
 
 /// DEX error codes (7000-7999)
@@ -508,6 +509,7 @@ mod tests {
             compliance_codes::COMPLIANCE_JURISDICTION_NOT_SUPPORTED,
             compliance_codes::COMPLIANCE_INVALID_DOCUMENT_TYPE,
             compliance_codes::COMPLIANCE_DATA_RETENTION_EXPIRED,
+            compliance_codes::COMPLIANCE_SANCTIONS_CHECK_FAILED,
             compliance_codes::REENTRANT_CALL,
         ];
         let len = codes.len();
